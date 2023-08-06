@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="/add">
+            <label for="todo-text">What to do, what to do...</label>
+            <input type="text" id="todo-text" name="todo-text">
+            <input type="submit" value="Add" name="add" id="add">
+            <input type="reset" value="Reset" name="reset" id="reset">
+        </form>
+        <div class="todo-list">
+            {% for todo in todos %}
+            <div class="todo-item">
+                <div class="todo-item-text">{{ todo.text }}</div>
+                <a href="/remove?todo_id={{ todo.id }}" class="remove">X</a>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+body{
+    background: rgba(255,179,61,.5);
+}
+
+.remove, #add, #reset{
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-weight: bold;
+}
+.remove, #reset{
+    background: rgba(255,0,0,.5);
+
+}
+.remove:hover, #reset:hover{
+    background: rgba(255,0,0,.8);
+}
+
+#add{
+    background: rgba(78, 200, 34, .6);
+}
+
+#add:hover{
+    background: rgba(78, 200, 34);
+}
+
+.remove{
+    margin: auto;
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 30px
+}
+
+.wrapper{
+    width: 95vw;
+    margin: 0 auto;
+}
+form{
+    margin: 10px auto;
+    width: fit-content;
+    padding: 20px;
+}
+
+.todo-list{
+    margin: 10px auto;
+    width: fit-content;
+}
+
+.todo-item{
+    min-width: 200px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin: 20px auto;
+    box-shadow: black 3px 3px 10px;
+    border-radius: 20px;
+    background: rgba(0,0,0,.1);
+    padding: 10px;
+}
+
+.todo-item-text{
+    width: fit-content;
+    max-width: 80%;
+    margin: auto;
+    font-size: 1.2rem;
+    padding: 5px 10px
+}
+
